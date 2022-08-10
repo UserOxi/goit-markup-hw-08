@@ -1,0 +1,7 @@
+.features {
+    @include section (94px, 0)
+}
+
+.features__list {
+@extend %reset-list;
+}

@@ -1,0 +1,51 @@
+:root {
+    /* fonts */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /* text color */
+    --primary-txt-cl: #757575;
+    --txt-dark-cl: #212121;
+    --txt-light-cl: #ffffff;
+    --accent-txt-cl: #2196f3;
+    --contacts-txt-cl: rgba(255, 255, 255, 0.6);
+    --logo-dark-cl: #000000;
+
+    /* bg color */
+    --hero-bg-cl: #c4c4c4;
+    --team-btn-bg-cl: #f5f4fa;
+    --address-bg-cl: #2f303a;
+    --btn-bg-cl: #f5f4fa;
+    --btn-hover-cl: #188ce8;
+    --about-bg-cl: rgba(47, 48, 58, 0.8);
+    --overlay-bg-cl: rgba(33, 150, 243, 0.9);
+    --backdrop-bg-cl: rgba(0, 0, 0, 0.2);
+
+    /* icon color */
+    --icon-grey-cl: #afb1b8;
+    --social-bg-cl: rgba(255, 255, 255, 0.1);
+
+    /* borders */
+    --header-border: 1px solid #ececec;
+    --portfolio-border: 1px solid #eeeeee;
+    --footer-form-border: 1px solid rgba(255, 255, 255, 0.3);
+    --hov-footer-form-border: 1px solid #2196f3;
+    --modal-input-border: 1px solid rgba(33, 33, 33, 0.2);
+
+    /* shadow */
+    --hov-portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    --hov-btn-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    --card-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    --box-shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    /* card-set */
+    --gap: 30px;
+    --card-item: 4;
+
+    /* animate */
+    --hov-anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --modal-anim: 400ms ease;
+}

@@ -1,0 +1,10 @@
+.contact-link {
+    @extend %reset-link;
+    
+    transition: color var(--hov-anim);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+        }
+}

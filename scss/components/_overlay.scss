@@ -1,0 +1,19 @@
+.overlay {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform var(--hov-anim), opacity var(--hov-anim);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    @include fonts(18px, 1.56, null, null);
+    
+    color: var(--txt-light-cl);
+    background-color: var(--overlay-bg-cl);
+}

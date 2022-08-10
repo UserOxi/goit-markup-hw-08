@@ -1,0 +1,17 @@
+.logo {
+    @extend %reset-link;
+
+    font-family: var(--secondary-font);
+
+    @include fonts(26px, 1.19, 700, null);
+    
+    color: var(--accent-txt-cl);
+
+&--dark {
+    color: var(--logo-dark-cl);
+}
+
+&--light {
+    color: var(--txt-light-cl);
+}
+}

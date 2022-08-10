@@ -1,0 +1,25 @@
+.advantage__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+
+    margin-bottom: 30px;
+
+    background-color: var(--btn-bg-cl);
+    border-radius: 4px;
+}
+
+.advantage__subtitle {
+    margin-bottom: 10px;
+
+    @include fonts (14px, 1.14, null, null);
+    
+    text-transform: uppercase;
+    color: var(--txt-dark-cl);
+}
+
+.advantage__txt {
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+}

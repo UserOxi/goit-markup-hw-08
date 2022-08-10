@@ -1,0 +1,36 @@
+.clients {
+@include section();
+}
+
+.clients__title {
+    @extend %title;
+    
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    @extend %reset-list;
+    
+    --card-item: 6;
+}
+
+.clients__link {
+    @extend %reset-link;
+    
+    transition: fill var(--hov-anim), border var(--hov-anim);
+
+    display: flex;
+    min-height: 92px;
+    align-items: center;
+    justify-content: center;
+
+    fill: var(--icon-grey-cl);
+    border: 1px solid var(--icon-grey-cl);
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+            --icon-grey-cl: var(--accent-txt-cl);
+        }
+}
+

@@ -1,0 +1,7 @@
+body {
+    @include fonts (14px, 1.71, null);
+
+    font-family: var(--main-font);
+    
+    color: var(--primary-txt-cl);
+}

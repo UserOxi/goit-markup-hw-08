@@ -1,0 +1,15 @@
+%reset-list {
+    list-style: none;
+}
+
+%reset-link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+%title {
+    @include fonts(36px, 1.17, null, null);
+
+    text-align: center;
+    color: var(--txt-dark-cl);
+}

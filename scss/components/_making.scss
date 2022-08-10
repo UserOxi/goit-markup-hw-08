@@ -1,0 +1,21 @@
+.making {
+    position: relative;
+}
+
+.making__txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    @include fonts (14px, 1.14, 700, null);
+    
+    text-transform: uppercase;
+    color: var(--txt-light-cl);
+    background-color: var(--about-bg-cl);
+}

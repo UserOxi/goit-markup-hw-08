@@ -1,0 +1,40 @@
+//utils styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+
+//base styles
+@import './base/base';
+@import './base/common';
+
+//components styles
+@import './components/card-set';
+@import './components/container';
+@import './components/contact-link';
+@import './components/social';
+@import './components/logo';
+@import './components/buttons';
+@import './components/advantege';
+@import './components/making';
+@import './components/team-member';
+@import './components/address';
+@import './components/joining';
+@import './components/subscription';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/overlay';
+@import './components/product';
+
+
+//layout styles
+@import './layout/header';
+@import './layout/nav';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';

@@ -1,0 +1,52 @@
+.subscription__title {
+    margin-bottom: 20px;
+
+    @include fonts(14px, 1.14, null, null);
+    
+    text-transform: uppercase;
+    color: var(--txt-light-cl);
+}
+
+.subscription__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.subscription__input {
+    transition: border var(--hov-anim);
+
+    width: 358px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+
+    @include fonts(16px, 1.25, 400, null);
+
+    color: var(--contacts-txt-cl);
+
+    border: var(--footer-form-border);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: transparent;
+
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+            border: var(--hov-footer-form-border);
+        }
+}
+
+.subscription__icon {
+    margin-left: 10px;
+
+    fill: currentColor;
+}

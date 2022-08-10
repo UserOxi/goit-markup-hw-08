@@ -1,0 +1,38 @@
+.portfolio {
+    @include section();
+}
+
+.portfolio__btn-list {
+    @extend %reset-list;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.portfolio__btn {
+    transition: color var(--hov-anim), background-color var(--hov-anim), box-shadow var(--hov-anim);
+
+    min-width: 73px;
+    padding: 6px 22px;
+
+    @include fonts(16px, 1.62, 500, 0.03em);
+    
+    color: var(--txt-dark-cl);
+    background-color: var(--team-btn-bg-cl);
+
+    &:hover,
+    &:focus,
+    &--active {
+            color: var(--txt-light-cl);
+            background-color: var(--accent-txt-cl);
+            box-shadow: var(--hov-btn-portfolio);
+        }
+}
+
+.portfolio__list {
+    @extend %reset-list;
+
+    --card-item: 3;
+}

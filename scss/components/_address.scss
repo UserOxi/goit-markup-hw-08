@@ -1,0 +1,33 @@
+.address {
+    font-style: inherit;
+    color: var(--contacts-txt-cl);
+}
+
+.address__list {
+    @extend %reset-list;
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.address__link {
+    @extend %reset-link;
+
+    transition: color var(--hov-anim);
+
+    color: var(--txt-light-cl);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-txt-cl);
+        }
+}
+
+.address__contact {
+    @extend %reset-list;
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}

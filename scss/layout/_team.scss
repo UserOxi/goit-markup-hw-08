@@ -1,0 +1,15 @@
+.team {
+    @include section();
+    
+    background-color: var(--team-btn-bg-cl);
+}
+
+.team__title {
+    @extend %title;
+
+    margin-bottom: 50px;
+}
+
+.team__list {
+    @extend %reset-list;
+}

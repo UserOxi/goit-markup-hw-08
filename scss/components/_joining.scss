@@ -1,0 +1,8 @@
+.joining__title {
+    margin-bottom: 20px;
+
+    @include fonts(14px, 1.14, null, null);
+    
+    text-transform: uppercase;
+    color: var(--txt-light-cl);
+}
