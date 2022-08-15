@@ -23,13 +23,14 @@
         <div class="header__container container">
             <a class="header__logo logo" href="index.html">Web<span class="logo logo--dark">Studio</span></a>
             <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="index.html">Студія</a>
+                <ul class="header__nav-list nav-list">
+                    <li class="header__nav-item nav-item">
+                        <a class="header__nav-link nav-link" href="index.html">Студія</a>
                     </li>
-                    <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
+                    <li class="header__nav-item nav-item">
+                        <a class="header__nav-link header__nav-link--current" href="./portfolio.html">Портфоліо</a>
                     </li>
-                    <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+                    <li class="header__nav-item nav-item"><a class="header__nav-link nav-link" href="">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="contact header__contact">
@@ -56,7 +57,9 @@
             <div class="container">
                 <h1 class="visually-hidden">Портфоліо</h1>
                 <ul class="portfolio__btn-list">
-                    <li><button class="btn portfolio__btn portfolio__btn--active" type="button">Усі</button></li>
+                    <li>
+                        <button class="btn portfolio__btn portfolio__btn--active" type="button">Усі</button>
+                    </li>
                     <li><button class="btn portfolio__btn" type="button">Веб-сайти</button></li>
                     <li><button class="btn portfolio__btn" type="button">Додатки</button></li>
                     <li><button class="btn portfolio__btn" type="button">Дизайн</button></li>
@@ -67,13 +70,39 @@
                         <a class="product__link" href="https://www.google.com/" target="_blank"
                             rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/tehnohryak.jpg"
-                                    alt="Ноутбук с открытым сайтом на экране" width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-1@1x_lg.webp 1x,
+                        ./images/portfolio/img-1@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-1@1x_lg.jpg 1x,
+                        ./images/portfolio/img-1@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-1@1x_md.webp 1x,
+                        ./images/portfolio/img-1@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-1@1x_md.jpg 1x,
+                        ./images/portfolio/img-1@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-1@1x_sm.webp 1x,
+                        ./images/portfolio/img-1@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-1@1x_sm.jpg 1x,
+                        ./images/portfolio/img-1@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-1@1x_sm.jpg"
+                                        alt="Ноутбук з відкритим сайтом" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -87,13 +116,39 @@
                         <a class="product__link" href="https://www.google.com/" target=" _blank"
                             rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/basketball.jpg"
-                                    alt="Противостояние двух баскетбольных игроков" width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-2@1x_lg.webp 1x,
+                        ./images/portfolio/img-2@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-2@1x_lg.jpg 1x,
+                        ./images/portfolio/img-2@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-2@1x_md.webp 1x,
+                        ./images/portfolio/img-2@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-2@1x_md.jpg 1x,
+                        ./images/portfolio/img-2@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-2@1x_sm.webp 1x,
+                        ./images/portfolio/img-2@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-2@1x_sm.jpg 1x,
+                        ./images/portfolio/img-2@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-2@1x_sm.jpg"
+                                        alt="Протистояння двох баскетбольних гравців" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -109,13 +164,38 @@
                         <a class="product__link" href="https://www.google.com/" target=" _blank"
                             rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/restaurant.jpg" alt="Логотип ресторана"
-                                    width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-3@1x_lg.webp 1x,
+                        ./images/portfolio/img-3@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-3@1x_lg.jpg 1x,
+                        ./images/portfolio/img-3@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-3@1x_md.webp 1x,
+                        ./images/portfolio/img-3@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-3@1x_md.jpg 1x,
+                        ./images/portfolio/img-3@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-3@1x_sm.webp 1x,
+                        ./images/portfolio/img-3@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-3@1x_sm.jpg 1x,
+                        ./images/portfolio/img-3@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-3@1x_sm.jpg" alt="Логотип ресторана" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -129,12 +209,38 @@
                         <a class="product__link" href="https://www.google.com/" target=" _blank"
                             rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/prime.jpg" alt="Наушники" width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-4@1x_lg.webp 1x,
+                        ./images/portfolio/img-4@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-4@1x_lg.jpg 1x,
+                        ./images/portfolio/img-4@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-4@1x_md.webp 1x,
+                        ./images/portfolio/img-4@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-4@1x_md.jpg 1x,
+                        ./images/portfolio/img-4@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-4@1x_sm.webp 1x,
+                        ./images/portfolio/img-4@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-4@1x_sm.jpg 1x,
+                        ./images/portfolio/img-4@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-4@1x_sm.jpg" alt="Навушники" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -147,18 +253,44 @@
                     <li class="card-item product">
                         <a class="product__link" href="" target=" _blank" rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/boxes.jpg" alt="Две коробки с надписями"
-                                    width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-5@1x_lg.webp 1x,
+                        ./images/portfolio/img-5@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-5@1x_lg.jpg 1x,
+                        ./images/portfolio/img-5@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-5@1x_md.webp 1x,
+                        ./images/portfolio/img-5@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-5@1x_md.jpg 1x,
+                        ./images/portfolio/img-5@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-5@1x_sm.webp 1x,
+                        ./images/portfolio/img-5@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-5@1x_sm.jpg 1x,
+                        ./images/portfolio/img-5@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-5@1x_sm.jpg"
+                                        alt="Дві коробки з написами" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>
                             <div class="product__content">
-                                <h2 class="product__title">Проєкт<span lang="en">Boxes</span></h2>
+                                <h2 class="product__title">Проєкт <span lang="en">Boxes</span></h2>
                                 <p class="product__txt">Додаток</p>
                             </div>
                         </a>
@@ -167,13 +299,39 @@
                         <a class="product__link" href="https://www.google.com/" target=" _blank"
                             rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/inspiration.jpg"
-                                    alt="Монитор с открытым сайтом на экране" width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-6@1x_lg.webp 1x,
+                        ./images/portfolio/img-6@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-6@1x_lg.jpg 1x,
+                        ./images/portfolio/img-6@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-6@1x_md.webp 1x,
+                        ./images/portfolio/img-6@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-6@1x_md.jpg 1x,
+                        ./images/portfolio/img-6@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-6@1x_sm.webp 1x,
+                        ./images/portfolio/img-6@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-6@1x_sm.jpg 1x,
+                        ./images/portfolio/img-6@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-6@1x_sm.jpg"
+                                        alt="Монітор з відкритим сайтом" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -187,20 +345,44 @@
                         <a class="product__link" href="https://www.google.com/" target=" _blank"
                             rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/edition.jpg" alt="Открытое книжное издание"
-                                    width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-7@1x_lg.webp 1x,
+                        ./images/portfolio/img-7@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-7@1x_lg.jpg 1x,
+                        ./images/portfolio/img-7@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-7@1x_md.webp 1x,
+                        ./images/portfolio/img-7@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-7@1x_md.jpg 1x,
+                        ./images/portfolio/img-7@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-7@1x_sm.webp 1x,
+                        ./images/portfolio/img-7@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-7@1x_sm.jpg 1x,
+                        ./images/portfolio/img-7@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-7@1x_sm.jpg"
+                                        alt="Відкрите книжкове видання" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>
                             <div class="product__content">
-                                <h2 class="product__title">
-                                    Видання <span lang="en">Limited Edition</span>
-                                </h2>
+                                <h2 class="product__title">Видання <span lang="en">Limited Edition</span></h2>
                                 <p class="product__txt">Дизайн</p>
                             </div>
                         </a>
@@ -209,12 +391,38 @@
                         <a class="product__link" href="https://www.google.com/" target=" _blank"
                             rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/lab.jpg" alt="Этикетка" width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-8@1x_lg.webp 1x,
+                        ./images/portfolio/img-8@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-8@1x_lg.jpg 1x,
+                        ./images/portfolio/img-8@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-8@1x_md.webp 1x,
+                        ./images/portfolio/img-8@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-8@1x_md.jpg 1x,
+                        ./images/portfolio/img-8@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-8@1x_sm.webp 1x,
+                        ./images/portfolio/img-8@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-8@1x_sm.jpg 1x,
+                        ./images/portfolio/img-8@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-8@1x_sm.jpg" alt="Етикетка" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -228,13 +436,39 @@
                         <a class="product__link" href="https://www.google.com/" target=" _blank"
                             rel="noopener noreferrer">
                             <div class="product__card-box">
-                                <img class="img" src="./images/portfolio/business.jpg" alt="Момент работы в приложении"
-                                    width="370" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-9@1x_lg.webp 1x,
+                        ./images/portfolio/img-9@2x_lg.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/img-9@1x_lg.jpg 1x,
+                        ./images/portfolio/img-9@2x_lg.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-9@1x_md.webp 1x,
+                        ./images/portfolio/img-9@2x_md.webp 2x
+                      " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/portfolio/img-9@1x_md.jpg 1x,
+                        ./images/portfolio/img-9@2x_md.jpg 2x
+                      " type="image/jpg" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-9@1x_sm.webp 1x,
+                        ./images/portfolio/img-9@2x_sm.webp 2x
+                      " type="image/webp" />
+                                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-9@1x_sm.jpg 1x,
+                        ./images/portfolio/img-9@2x_sm.jpg 2x
+                      " type="image/jpg" />
+                                    <img class="img" src="./images/portfolio/img-9@1x_sm.jpg"
+                                        alt="Мить роботи у додатку" />
+                                </picture>
                                 <div class="overlay product__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                        приватну особу.
                                     </p>
                                 </div>
                             </div>

@@ -12,14 +12,24 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        gap: 20px;
+
+    }
 }
 
 .subscription__input {
     transition: border var(--hov-anim);
 
-    width: 358px;
+    @media screen and (max-width: 1199px) {
+        width: 450px;
+    }
 
-    font-family: 'Roboto';
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        }
+
     font-style: normal;
 
     @include fonts(16px, 1.25, 400, null);

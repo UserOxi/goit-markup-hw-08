@@ -3,7 +3,11 @@
 
     font-family: var(--secondary-font);
 
-    @include fonts(26px, 1.19, 700, null);
+    @include fonts(24px, 1.17, 700, null);
+
+    @media screen and (min-width: 1200px) {
+        @include fonts(26px, 1.19, 700, null);
+    }
     
     color: var(--accent-txt-cl);
 

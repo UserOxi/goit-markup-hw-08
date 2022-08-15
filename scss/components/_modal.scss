@@ -1,19 +1,28 @@
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
 
     opacity: 1;
     transform: translate(-50%, -50%) scaleX(1) rotate(0);
 
     transition: transform var(--modal-anim), opacity var(--modal-anim);
 
-    width: 528px;
-    height: 581px;
+    
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 41px;
-    padding-right: 39px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+@media screen and (max-width: 1199px) {
+        max-width: 450px;
+        max-height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+    }
 
     background-color: var(--txt-light-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -61,7 +70,11 @@
 
     text-align: center;
 
+    @include fonts(20px, 1.5, null, null);
+
+    @media screen and (min-width: 1200px) {
     @include fonts(20px, 1.15, null, null);
+    }
 
     color: var(--txt-dark-cl);
 }
@@ -127,7 +140,7 @@
 
 .user-data {
     padding-top: 11px;
-    padding-left: 12px;
+    padding-right: 11px;
     padding-bottom: 11px;
     padding-left: 42px;
 }
@@ -141,7 +154,11 @@
 .user-comment::placeholder {
     font-style: normal;
 
-    @include fonts(12px, 1.17, 400, 0.01em);
+    @include fonts(14px, 1.42, 400, 0.01em);
+
+    @media screen and(min-width: 1200px) {
+        @include fonts(12px, 1.17, 400, 0.01em);
+    }
 
     color: rgba(117, 117, 117, 0.5);
 }
@@ -182,6 +199,10 @@
 .modal__agreement-txt {
     margin-left: 7px;
     user-select: none;
+
+    @media screen and (max-width: 1199px) {
+        @include fonts (12px, 1.17, null, null);
+    }
 }
 
 .modal__link {

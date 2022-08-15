@@ -1,7 +1,17 @@
 .features {
-    @include section (94px, 0)
+    @include section ();
+    @media screen and (min-width: 1200px) {
+        @include section (94px, 94px);
+    }
 }
 
 .features__list {
 @extend %reset-list;
+
+@media screen and (min-width: 768px) {
+    --card-item: 2;
+}
+@media screen and (min-width: 1200px) {
+    --card-item: 4;
+}
 }

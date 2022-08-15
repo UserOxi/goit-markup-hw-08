@@ -8,8 +8,11 @@
 }
 
 %title {
-    @include fonts(36px, 1.17, null, null);
-
+    @include fonts(28px, 1.18, null, null);
+    
+    @media screen and (min-width: 1200px) {
+        @include fonts(36px, 1.17, null, null);
+    }
     text-align: center;
     color: var(--txt-dark-cl);
 }

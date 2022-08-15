@@ -10,13 +10,37 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
     gap: 70px;
+    }
 }
 
-.footer__item:last-child {
-    margin-left: auto;
+.footer__item {
+@media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    @media screen and (min-width: 1200px) {
+        &:last-child {
+                margin-left: auto;
+            }
+    }
 }
 
 .footer__logo {

@@ -1,0 +1,108 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    
+    transition: opacity var(--modal-anim), visibility var(--modal-anim);
+    
+        background-color: var(--txt-light-cl);
+        box-shadow: var(--menu-shadow);
+    
+        &.is-open {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+}
+
+.menu__btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    &:hover,
+        &:focus {
+            fill: var(--accent-txt-cl);
+        }
+}
+
+.menu-btn {
+    transition: fill var(--hov-anim);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    background-color: var(--txt-light-cl);
+    fill: var(--logo-dark-cl);
+    border: none;
+}
+
+.menu__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @extend %reset-list;
+    
+    }
+
+.menu__nav-link {
+    @extend %reset-link;
+
+    @include fonts (40px, 1.18, 500, 0.02em);
+    color: var(--txt-dark-cl);
+    
+&--current {
+        color: var(--accent-txt-cl);
+}
+}
+
+.menu__contact {
+    @extend %reset-list;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.menu__contact-link {
+    @extend %reset-link;
+}
+
+.menu__contact-link-tel {
+@include fonts (27px, 1.18, 500, 0.02em);
+    color: var(--accent-txt-cl);
+
+    @media screen and (min-width: 377px) {
+    @include fonts (34px, 1.18, 500, 0.02em);
+    }
+
+}
+
+.socmedia {
+    @extend %reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.socmedia__link {
+    @extend %reset-link;
+    @include fonts (18px, 1.22, 500, 0.02em);
+    color: var(--accent-txt-cl);
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
