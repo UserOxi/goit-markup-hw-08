@@ -57,7 +57,6 @@
     flex-direction: column;
     gap: 32px;
     @extend %reset-list;
-    
     }
 
 .menu__nav-link {
@@ -100,9 +99,14 @@
     
 }
 
+.socmedia__item:not(:last-child) .socmedia__link {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .socmedia__link {
     @extend %reset-link;
     @include fonts (18px, 1.22, 500, 0.02em);
     color: var(--accent-txt-cl);
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    
 }

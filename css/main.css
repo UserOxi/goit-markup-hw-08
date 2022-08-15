@@ -378,13 +378,17 @@ ul {
   gap: 10px;
 }
 
+.socmedia__item:not(:last-child) .socmedia__link {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .socmedia__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .advantage__icon {
@@ -584,6 +588,11 @@ ul {
   background-color: transparent;
   outline: transparent;
 }
+@media screen and (max-width: 478px) {
+  .subscription__input {
+    max-width: 290px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .subscription__input {
     width: 450px;
@@ -647,14 +656,14 @@ ul {
 }
 @media screen and (max-width: 1199px) {
   .modal {
-    max-width: 450px;
-    max-height: 609px;
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
-    max-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1025,6 +1034,13 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .header__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .header__logo {
   padding-top: 16px;
@@ -1107,7 +1123,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .header__contact {
@@ -1115,6 +1133,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1127,6 +1148,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 30px;
     margin-left: auto;
   }
@@ -1136,12 +1160,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 10px;
   letter-spacing: 0.02em;
   fill: currentColor;

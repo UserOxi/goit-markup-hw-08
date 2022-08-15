@@ -7,6 +7,10 @@
 .header__container {
     position: relative;
     display: flex;
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+    }
 }
 
 .header__logo {
@@ -94,15 +98,17 @@
     @extend %reset-list;
 
     display: flex;
-    margin-left: auto;
+    align-items: center;
     
     @media screen and (min-width: 768px) {
         flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
         gap: 10px;
     }
     @media screen and (min-width: 1200px) {
         flex-direction: row;
+        align-items: center;
         gap: 30px;
         margin-left: auto;
     }
@@ -111,8 +117,6 @@
 
 .header__contact-link {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
 
     letter-spacing: 0.02em;

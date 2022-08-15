@@ -22,6 +22,10 @@
 .subscription__input {
     transition: border var(--hov-anim);
 
+@media screen and (max-width: 478px) {
+    max-width: 290px;
+}
+
     @media screen and (max-width: 1199px) {
         width: 450px;
     }
