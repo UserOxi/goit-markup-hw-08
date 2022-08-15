@@ -91,6 +91,10 @@
 
 }
 
+.menu__contact-link-mail {
+@include fonts (28px, 1.17, 500, 0.02em);
+}
+
 .socmedia {
     @extend %reset-list;
     display: flex;
