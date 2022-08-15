@@ -22,33 +22,41 @@
     <header class="header">
         <div class="header__container container">
             <a class="header__logo logo" href="index.html">Web<span class="logo logo--dark">Studio</span></a>
-            <nav class="nav">
-                <ul class="header__nav-list nav-list">
-                    <li class="header__nav-item nav-item">
-                        <a class="header__nav-link nav-link" href="index.html">Студія</a>
+            <button class="header__menu-btn menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
+                aria-label="Перемикач мобільного меню" data-menu-open>
+                <svg class="menu__icon-burger" width="40" height="40">
+                    <use href="./images/icons/symbol-defs.svg#menu-burger"></use>
+                </svg>
+            </button>
+            <div class="header__menu">
+                <nav class="header-nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="index.html">Студія</a>
+                        </li>
+                        <li class=".header__nav-item"><a class="header__nav-link header__nav-link--current"
+                                href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class=".header__nav-item {"><a class="header__nav-link" href="">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="contact header__contact">
+                    <li class="contact__item">
+                        <a class="contact-link header__contact-link" href="mailto:info@devstudio.com">
+                            <svg width="16" height="12">
+                                <use href="./images/icons/symbol-defs.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
                     </li>
-                    <li class="header__nav-item nav-item">
-                        <a class="header__nav-link header__nav-link--current" href="./portfolio.html">Портфоліо</a>
+                    <li class="contact__item">
+                        <a class="contact-link header__contact-link" href="tel:+380961111111">
+                            <svg width="10" height="16">
+                                <use href="./images/icons/symbol-defs.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
                     </li>
-                    <li class="header__nav-item nav-item"><a class="header__nav-link nav-link" href="">Контакти</a></li>
                 </ul>
-            </nav>
-            <ul class="contact header__contact">
-                <li class="contact__item">
-                    <a class="contact-link header__contact-link" href="mailto:info@devstudio.com">
-                        <svg width="16" height="12">
-                            <use href="./images/icons/symbol-defs.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="contact__item">
-                    <a class="contact-link header__contact-link" href="tel:+380961111111">
-                        <svg width="10" height="16">
-                            <use href="./images/icons/symbol-defs.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
     <!--Main section-->
@@ -559,6 +567,53 @@
             </div>
         </div>
     </footer>
+    <!--Menu window -->
+    <div class="menu is-open" id="mobile-menu" data-menu>
+        <div class="menu__container">
+            <button class="menu__btn-close btn-close menu-btn" type="button" data-menu-close>
+                <svg class="menu__icon-close" width="40" height="40">
+                    <use href="./images/icons/symbol-defs.svg#menu-close"></use>
+                </svg>
+            </button>
+            <nav class="menu__nav">
+                <ul class="menu__nav-list">
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--current" href="index.html">Студія</a>
+                    </li>
+                    <li class="menu__nav-item"><a class="menu__nav-link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="menu__nav-item"><a class="menu__nav-link" href="">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="menu__contact">
+                <li class="menu__contact-item">
+                    <a class="menu__contact-link menu__contact-link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="menu__contact-item">
+                    <a class="menu__contact-link menu__contact-link-mail"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="socmedia menu__socmedia">
+                <li class="socmedia__item">
+                    <a class="socmedia__link" href="" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">Instagram</a>
+                </li>
+                <li class="socmedia__item">
+                    <a class="socmedia__link" href="" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter">Twitter</a>
+                </li>
+                <li class="socmedia__item">
+                    <a class="socmedia__link" href="" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">Facebook</a>
+                </li>
+                <li class="socmedia__item">
+                    <a class="socmedia__link" href="" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
