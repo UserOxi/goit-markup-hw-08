@@ -602,9 +602,9 @@ ul {
   background-color: transparent;
   outline: transparent;
 }
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 479px) {
   .subscription__input {
-    max-width: 290px;
+    max-width: 95vw;
   }
 }
 @media screen and (max-width: 1199px) {
