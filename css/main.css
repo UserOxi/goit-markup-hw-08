@@ -128,7 +128,7 @@ ul {
 
 .container {
   min-width: 320px;
-  max-width: 1170px;
+  max-width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -990,6 +990,9 @@ ul {
   transition: -webkit-box-shadow var(--hov-anim);
   transition: box-shadow var(--hov-anim);
   transition: box-shadow var(--hov-anim), -webkit-box-shadow var(--hov-anim);
+  -ms-flex-negative: column;
+      flex-shrink: column;
+  height: 100%;
 }
 .product__link:hover, .product__link:focus {
   -webkit-box-shadow: var(--hov-portfolio-shadow);
@@ -1015,6 +1018,9 @@ ul {
 }
 
 .product__content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
