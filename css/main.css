@@ -322,6 +322,10 @@ ul {
   border: none;
 }
 
+.menu__nav {
+  margin-bottom: 302px;
+}
+
 .menu__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,6 +357,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  margin-bottom: 64px;
 }
 
 .menu__contact-link-tel {
@@ -642,6 +647,24 @@ ul {
   -webkit-transform: translate(-250%, 150%) scaleX(0.1) rotate(810deg);
           transform: translate(-250%, 150%) scaleX(0.1) rotate(810deg);
 }
+@media screen and (min-width: 320px) {
+  .backdrop {
+    max-width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .backdrop {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal {
   position: fixed;
@@ -662,18 +685,6 @@ ul {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-@media screen and (max-width: 1199px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
 }
 
 .modal__close-btn {
@@ -1149,6 +1160,7 @@ ul {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 10px;
+    margin-left: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1161,6 +1173,7 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     gap: 30px;
+    margin-left: 285px;
   }
 }
 

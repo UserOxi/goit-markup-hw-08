@@ -52,6 +52,9 @@
     border: none;
 }
 
+.menu__nav {
+    margin-bottom: 302px;
+}
 .menu__nav-list {
     display: flex;
     flex-direction: column;
@@ -75,6 +78,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-bottom: 64px;
 }
 
 .menu__contact-link {
@@ -100,7 +104,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    
 }
 
 .socmedia__item:not(:last-child) .socmedia__link {
