@@ -13,8 +13,19 @@
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    
+    width: auto;
+    height: auto;
 
-
+    @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 609px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 528px;
+            height: 581px;
+        }
 
     background-color: var(--txt-light-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
