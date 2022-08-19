@@ -1,3 +1,4 @@
+
 .advantage__icon {
     display: flex;
     align-items: center;
@@ -17,6 +18,11 @@
     
     text-transform: uppercase;
     color: var(--txt-dark-cl);
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .advantage__txt {

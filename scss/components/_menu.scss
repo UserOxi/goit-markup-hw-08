@@ -22,6 +22,8 @@
     display: flex;
     flex-direction: column;
     padding: 48px 40px;
+
+    height: 100%;
 }
 
 .menu__btn-close {
@@ -53,12 +55,13 @@
 }
 
 .menu__nav {
-    margin-bottom: 302px;
+    margin-bottom: auto;
 }
 .menu__nav-list {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-bottom: auto;
     @extend %reset-list;
     }
 
@@ -68,6 +71,11 @@
     @include fonts (40px, 1.18, 500, 0.02em);
     color: var(--txt-dark-cl);
     
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
+
 &--current {
         color: var(--accent-txt-cl);
 }

@@ -7,13 +7,32 @@
     align-items: center;
     justify-content: center;
 
-    padding-top: 63px;
-    padding-bottom: 63px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     padding-right: 24px;
     padding-left: 24px;
 
-    @include fonts(18px, 1.56, null, null);
+    @include fonts(18px, 1.56, 400, 0.03em);
     
     color: var(--txt-light-cl);
     background-color: var(--overlay-bg-cl);
+
+    @media screen and (min-width: 480px) {
+        padding-top: 77px;
+        padding-bottom: 77px;
+    }
+          
+    @media screen and (min-width: 768px) {
+        padding-top: 49px;
+    }
+                        
+    @media screen and (min-width: 1200px) {
+        padding-top: 63px;
+        padding-bottom: 63px;
+    }
+}
+
+.overlay__txt {
+    height: 100%;
+    overflow: auto;
 }
