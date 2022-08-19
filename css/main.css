@@ -1104,7 +1104,6 @@ ul {
 }
 
 .header__container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1163,6 +1162,10 @@ ul {
   display: flex;
   gap: 50px;
   letter-spacing: 0.02em;
+}
+
+.header__nav-item {
+  position: relative;
 }
 
 .header__nav-link {

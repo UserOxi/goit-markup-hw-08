@@ -5,7 +5,6 @@
 }
 
 .header__container {
-    position: relative;
     display: flex;
     align-items: center;
     height: 100%;
@@ -54,6 +53,10 @@
     gap: 50px;
 
     letter-spacing: 0.02em;
+}
+
+.header__nav-item {
+    position: relative;
 }
 
 .header__nav-link {
