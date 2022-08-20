@@ -291,6 +291,8 @@ ul {
           flex-direction: column;
   padding: 48px 40px;
   height: 100%;
+  overflow: auto;
+  gap: 64px;
 }
 
 .menu__btn-close {
@@ -362,7 +364,6 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
-  margin-bottom: 64px;
 }
 
 .menu__contact-link-tel {
